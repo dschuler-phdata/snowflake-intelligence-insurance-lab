@@ -1,5 +1,5 @@
 create database if not exists cortex_lab_db;
-create schema if not exists cortex_lab_db.risk_data;
+create schema if not exists cortex_lab_db.data;
 
 CREATE DATABASE IF NOT EXISTS snowflake_intelligence;
 CREATE SCHEMA IF NOT EXISTS snowflake_intelligence.agents;
@@ -30,5 +30,3 @@ CREATE OR REPLACE NOTIFICATION INTEGRATION ai_email_int
   ENABLED=TRUE;
 
 GRANT DATABASE ROLE SNOWFLAKE.PYPI_REPOSITORY_USER TO ROLE attendee_role;
-
-use schema CORTEX_LAB_DB.RISK_DATA;
